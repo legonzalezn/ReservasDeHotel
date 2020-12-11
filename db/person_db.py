@@ -8,7 +8,7 @@ class PersonInDB(BaseModel):
     nombre2:str = ""
     apellido1:str
     apellido2:str = ""
-    fecha_nacimiento:datetime = datetime.fromisoformat('9999-12-31')
+    fecha_nacimiento:datetime = datetime(9999,12,31)
     nacionalidad:int
     numeroDeContacto:str
     direccion:str = ""
