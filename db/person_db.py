@@ -1,19 +1,20 @@
 from datetime import datetime
+from typing import Optional
 from typing import Dict
 from pydantic import BaseModel
 
 class PersonInDB(BaseModel):
     id:int = 0
     nombre1:str
-    nombre2:str = ""
+    nombre2:Optional[str] = ""
     apellido1:str
-    apellido2:str = ""
-    fecha_nacimiento:datetime = datetime(9999,12,31)
+    apellido2:Optional[str] = ""
+    fecha_nacimiento:Optional[datetime] = datetime(9999,12,31)
     nacionalidad:int
     numeroDeContacto:str
-    direccion:str = ""
-    ubicacion:int = 0
-    otra:str = ""
+    direccion:Optional[str] = ""
+    ubicacion:Optional[int] = 0
+    otra:Optional[str] = ""
     documento:int
     numero:str
     email:str

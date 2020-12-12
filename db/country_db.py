@@ -503,3 +503,9 @@ def get_name(id:int):
         return database_country[id]
     else:
         return None
+
+def get_list(por_id:bool):
+    if por_id:
+        return database_country
+    else:
+        return database_country_name
