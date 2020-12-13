@@ -13,15 +13,15 @@ class PersonDeleteOut(BaseModel):
 
 class PersonIn(BaseModel):
     nombre1:str
-    nombre2:Optional[str] = None
+    nombre2:Optional[str] = ""
     apellido1:str
-    apellido2:Optional[str] = None
-    fecha_nacimiento:Optional[datetime] = None
+    apellido2:Optional[str] = ""
+    fecha_nacimiento:Optional[datetime] = datetime(9999,12,31)
     nacionalidad:int
     numeroDeContacto:str
-    direccion:Optional[str] = None
-    ubicacion:Optional[int] = None
-    otra:Optional[str] = None
+    direccion:Optional[str] = ""
+    ubicacion:Optional[int] = 0
+    otra:Optional[str] = ""
     documento:int
     numero:str
     email:str

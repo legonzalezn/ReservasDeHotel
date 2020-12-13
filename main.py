@@ -70,7 +70,9 @@ async def get_full_name(person_in:PersonIdIn):
 
 @reservas.post("/add/person/")
 async def post_person(person_in:PersonIn):
-    person_in_db = PersonInDB(**person_in.dict())
+    person_in_aux = person_in.dict()
+    person_in_aux["id"] = 0
+    person_in_db = PersonInDB(**person_in_aux)
 
     person_in_db = save_person(person_in_db)
 
