@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "0318c2bd-d775-4363-9e84-e16e0bd4a353",
+		"name": "G3M1_6_sprint2",
+		"description": "Colección resultado del desarrollo del Sprint 2 del ciclo 3 en la monitoria 1 del grupo 3, desarrollado por el grupo 6 sobre el sistema de reservas a desarrollar como proyecto de ciclo.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Agregar usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre1\":\"William\",\r\n    \"nombre2\":\"Andres\",\r\n    \"apellido1\":\"Rodriguez\",\r\n    \"apellido2\":\"Mora\",\r\n    \"nacionalidad\":57,\r\n    \"numeroDeContacto\":\"3002222222\",\r\n    \"documento\":1,\r\n    \"numero\":\"58\",\r\n    \"email\":\"warodriguezm@unal.edu.co\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/add/person/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"add",
+						"person",
+						""
+					]
+				},
+				"description": "Crear nuevo usuario en la base ficticia."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Actualizar usuario (id)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"nombre2\":\"Carlos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/update/person/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"update",
+						"person",
+						""
+					]
+				},
+				"description": "Actualiza usuario en la base ficticia."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Borrar usuario (id)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/delete/person/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"delete",
+						"person",
+						""
+					]
+				},
+				"description": "Borrado usuario en la base ficticia."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Buscar usuario (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/person/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"person",
+						""
+					]
+				},
+				"description": "Obtiene usuario de la base ficticia."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Lista de usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/list/person/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"list",
+						"person",
+						""
+					]
+				},
+				"description": "Obtiene todos los usuarios de la base ficticia."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Nombre completo (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/person/full_name/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"person",
+						"full_name",
+						""
+					]
+				},
+				"description": "Obtiene el nombre completo del usuario de la base ficticia."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Buscar país (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":47\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/list/country/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"list",
+						"country",
+						""
+					]
+				},
+				"description": "Obtiene el nombre del país a través del índice."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Buscar país (name)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Colombia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/list/country_name/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"list",
+						"country_name",
+						""
+					]
+				},
+				"description": "Obtiene el nombre del país a través del nombre."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Lista de paises (id)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"index_id\":true\r\n}"
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/list/countries/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"list",
+						"countries",
+						""
+					]
+				},
+				"description": "Obtiene el listado de los paises con el identificador como índice."
+			},
+			"response": []
+		},
+		{
+			"name": "GET Lista de paises (name)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"index_id\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sprint2unal.herokuapp.com/list/countries/",
+					"protocol": "https",
+					"host": [
+						"sprint2unal",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"list",
+						"countries",
+						""
+					]
+				},
+				"description": "Obtiene el listado de los paises con el identificador como nombre."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
