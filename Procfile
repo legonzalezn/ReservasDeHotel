@@ -1,1 +1,1 @@
-web: uvicorn main:api --host=0.0.0.0 --port=${PORT:-5001}
+web: uvicorn main:reservas --host=0.0.0.0 --port=${PORT:-5001}
